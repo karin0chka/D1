@@ -1,0 +1,88 @@
+body {
+  max-height: 100vh;
+  height: 100%;
+  width: 100vw;
+  box-sizing: border-box;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+#myHeader,
+#myFooter {
+  height: 10vh;
+  background-color: gainsboro;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#myContent {
+  height: 80vh;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+img {
+  width: 100%;
+  object-fit: contain;
+  max-height: 400px;
+}
+
+.counter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+button {
+  border: 2px solid lightblue !important;
+  background-color: white !important;
+  color: black !important;
+  border-radius: 5px;
+  padding: 5px 20px;
+  width: 100px;
+  height: 30px;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+button:hover {
+  box-shadow: 0 2px 4px grey;
+}
+button:active {
+  box-shadow: 0 4px 8px grey;
+}
+
+.btn-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+a {
+  color: aqua;
+  font-weight: bold;
+  text-decoration: none;
+  animation: rainbow 2s infinite ease;
+}
+
+@keyframes rainbow {
+  0% {
+    color: rgb(43, 190, 190);
+  }
+  33% {
+    color: rgb(72, 255, 0);
+  }
+  66% {
+    color: rgb(255, 166, 0);
+  }
+  100% {
+    color: rgb(0, 157, 255);
+  }
+}
