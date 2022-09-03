@@ -23,6 +23,7 @@ body {
   flex-direction: column;
   align-items: center;
   gap: 20px;
+  background-color: whitesmoke;
 }
 
 img {
@@ -32,6 +33,10 @@ img {
 }
 
 .counter {
+  background-color: white;
+  padding: 0.5rem 2rem;
+  box-shadow: 0 2px 3px silver;
+border-radius: 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -47,7 +52,7 @@ button {
   padding: 5px 20px;
   width: 100px;
   height: 30px;
-  transition: 0.2s;
+  transition: 0.1s;
   cursor: pointer;
 }
 
@@ -56,6 +61,7 @@ button:hover {
 }
 button:active {
   box-shadow: 0 4px 8px grey;
+  background-color: rgb(244, 244, 244) !important;
 }
 
 .btn-wrapper {
